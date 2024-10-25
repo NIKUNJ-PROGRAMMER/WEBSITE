@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI and Data Science Portfolio for a student specializing in Artificial Intelligence and Machine Learning. Showcasing projects, research, achievements, and more.">
+    <meta name="keywords" content="AI, Machine Learning, Data Science, Student Portfolio, Projects, Research">
+    <title>AI and Data Science Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .header, .footer {
+            background-color: #3a3f44;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .section-title {
+            color: #007bff;
+            margin-top: 40px;
+        }
+        .profile-pic {
+            border-radius: 50%;
+            width: 150px;
+            margin-top: 15px;
+        }
+        .container {
+            max-width: 960px;
+        }
+        #scrollToTop {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            z-index: 1000;
+        }
+    </style>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Your Name",
+        "description": "AI and Data Science Portfolio",
+        "url": "http://yourwebsite.com",
+        "image": "http://yourwebsite.com/images/profile.jpg",
+        "sameAs": [
+            "https://www.linkedin.com/in/yourprofile"
+        ]
+    }
+    </script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <h1>Welcome to My AI and Data Science Portfolio</h1>
+        <p>Explore my journey through academic achievements, impactful projects, and professional experience in AI and Data Science.</p>
+        <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic">
+    </header>
+
+    <!-- Main Container -->
+    <div class="container my-5">
+        <!-- About Me Section -->
+        <section id="about" class="mt-4">
+            <h2 class="section-title">About Me</h2>
+            <p>Hello! I’m <strong>Your Name</strong>, a B.Tech student specializing in Artificial Intelligence and Data Science at the Institute of Engineering & Management, Kolkata. I focus on machine learning applications in healthcare and finance, and I have a strong foundation in Python, TensorFlow, and data visualization.</p>
+        </section>
+
+        <!-- Educational Background Section -->
+        <section id="education">
+            <h2 class="section-title">Educational Background</h2>
+            <ul class="list-group">
+                <li class="list-group-item"><strong>B.Tech in Computer Science, AI Specialization</strong> - IEM, Kolkata, GPA: 8.9</li>
+                <li class="list-group-item"><strong>Higher Secondary Education</strong> - [Your School Name], Graduated with Honors, specializing in Mathematics and Computer Science</li>
+            </ul>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <h2 class="section-title">Experience</h2>
+            <ul class="list-group">
+                <li class="list-group-item"><strong>Machine Learning Intern, XYZ Healthcare</strong> - Developed ML models to improve patient data analysis efficiency.</li>
+                <li class="list-group-item"><strong>Research Assistant, IEM AI Lab</strong> - Conducted NLP research for medical documentation analysis.</li>
+            </ul>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="btn-group mb-3" role="group" aria-label="Project Categories">
+                <button type="button" class="btn btn-secondary" onclick="filterProjects('all')">All</button>
+                <button type="button" class="btn btn-secondary" onclick="filterProjects('healthcare')">Healthcare</button>
+                <button type="button" class="btn btn-secondary" onclick="filterProjects('finance')">Finance</button>
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item healthcare"><strong>Healthcare Chatbot</strong> - Designed an NLP chatbot to assist with health advice and scheduling.</li>
+                <li class="list-group-item healthcare"><strong>Image Classification for Disease Detection</strong> - Developed a deep learning model for image-based disease detection.</li>
+            </ul>
+            <img src="images/project.png" alt="Project Image" class="img-fluid mt-3" loading="lazy">
+        </section>
+
+        <!-- Awards and Achievements Section -->
+        <section id="awards">
+            <h2 class="section-title">Awards and Achievements</h2>
+            <ul class="list-group">
+                <li class="list-group-item"><strong>First Place, AI in Health Hackathon</strong> - Developed an AI chatbot for health inquiries.</li>
+                <li class="list-group-item"><strong>Academic Excellence Award</strong> - Recognized for maintaining a high GPA.</li>
+            </ul>
+        </section>
+
+        <!-- Membership Section -->
+        <section id="membership">
+            <h2 class="section-title">Memberships</h2>
+            <ul class="list-group">
+                <li class="list-group-item">Member, Association for Computing Machinery (ACM)</li>
+                <li class="list-group-item">Volunteer, AI for Good Foundation</li>
+            </ul>
+        </section>
+
+        <!-- Research Section -->
+        <section id="research">
+            <h2 class="section-title">Research Thrust Area</h2>
+            <p>Focused on predictive modeling in healthcare, aiming to enhance diagnostics through data-driven insights.</p>
+        </section>
+
+        <!-- Events Section -->
+        <section id="events">
+            <h2 class="section-title">Events</h2>
+            <ul class="list-group">
+                <li class="list-group-item"><strong>AI Symposium 2023</strong> - Presented findings on predictive analytics.</li>
+                <li class="list-group-item"><strong>ML Workshop</strong> - Attended an advanced machine learning workshop.</li>
+            </ul>
+        </section>
+
+        <!-- Courses Section -->
+        <section id="courses">
+            <h2 class="section-title">Courses Completed</h2>
+            <ul class="list-group">
+                <li class="list-group-item">Deep Learning Specialization - Coursera</li>
+                <li class="list-group-item">Data Science in Python - NPTEL</li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- Contact Section -->
+    <footer class="footer">
+        <h2>Contact Information</h2>
+        <form action="https://formspree.io/f/yourFormID" method="POST">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile">LinkedIn Profile</a></p>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="btn btn-primary">Scroll to Top</button>
+
+    <!-- Bootstrap and jQuery Bundle -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Scroll to Top Functionality
+        window.onscroll = function() {
+            const button = document.getElementById('scrollToTop');
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        };
+
+        document.getElementById('scrollToTop').onclick = function() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        };
+
+        // Project Filtering Functionality
+        function filterProjects(category) {
+            const items = document.querySelectorAll('.list-group-item');
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
